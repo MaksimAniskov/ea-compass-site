@@ -1,0 +1,98 @@
+# ---------
+# JEKYLL CONFIGURATION
+# More info at https://jekyllrb.com/docs/configuration/options/
+# ---------
+# TO USE JEKYLL LIBDOC AS REMOTE THEME, UNCOMMENT (available only on Github)
+remote_theme: olivier3lanc/Jekyll-LibDoc
+title: Enterprise Architecture C.O.M.P.A.S.S
+description: >- # Description of the docs. (>- means to ignore newlines until next param)
+  Enterprise Architecture C.O.M.P.A.S.S
+# IMPORTANT: on Github Pages deploys, url and baseurl must be commented or set to proper settings, otherwise links and resources URL are wrong
+# url: http://localhost # the base hostname & protocol for your site, e.g. http://example.com
+# baseurl: /Jekyll-LibDoc/_site # the subpath of your site, e.g. /blog
+#permalink: /:path/:basename/:output_ext
+#destination: ../your/new/path # Build relative path destination. The destination directory e.g. /blog
+#keep_files: [cache]
+#markdown: kramdown
+defaults:
+  - values:
+      layout: libdoc/page
+kramdown:
+    syntax_highlighter_opts:
+        disable: true
+sass:
+    style: compressed
+
+# ---------
+# LIBDOC CONFIGURATION
+# https://olivier3lanc.github.io/Jekyll-LibDoc/libdoc-config.html
+# ---------
+
+# METADATA
+# Metadata informations for the site/project
+metadata:
+    # LANGUAGE
+    # Change the language of the playground, default is en
+    lang: en
+
+# SIDEBAR 
+# Main navigation containing site/project's logo, pages links and search form.
+sidebar:
+    # # LOGO
+    # # Top left branding/homepage link, specified image URL or site title if no URL is set
+    # logo:
+    #     # LOGO URL
+    #     # Image URL: Can be local e.g. '/img/logo.png' or remote 'https://remotesite.com/img/logo.png'
+    #     url: /assets/libdoc/img/favicon/android-chrome-512x512.png
+
+    #     # LOGO MAX HEIGHT
+    #     # Logo image max height, applies only if url is set
+    #     max_height: 40px
+
+    #     # LOGO FONT SIZE FALLBACK
+    #     # If no logo url, font size of the site title, ignored if url is set
+    #     font_size: 32px
+
+    # ADDITIONAL LINKS
+    # Allows to add links that are not pages included into the project
+    # Display additional links anywhere into the sidebar
+
+# ASSETS
+# Settings for the assets layout
+assets:
+    # START PATH
+    # The path from which files are available to download. '/' is the root
+    path_from_root: /
+    # List of extension files you wish to display on assets layout
+    extensions_enabled: 
+        - pdf
+        - js
+        - css
+        - ttf
+        - woff
+        - woff2
+        - otf
+        - zip
+        - sketch
+        - svg
+        - jpg
+        - jpeg
+        - gif
+        - png
+        - webp
+        - psd
+        - ai
+        - heic
+        - mp4
+        - webm
+        - ogv
+    
+    # IMAGES
+    # Array list of image extensions (without point) to display as image into asset grid
+    image_extensions: 
+        - svg
+        - jpg
+        - jpeg
+        - gif
+        - png
+        - webp
